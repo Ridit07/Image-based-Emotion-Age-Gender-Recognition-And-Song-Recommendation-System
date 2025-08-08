@@ -5,9 +5,7 @@ This AI-powered system captures a user's facial image through a webcam, detects 
 It aims to provide an engaging and context-aware listening experience by blending **computer vision**, **machine learning**, and **music recommendation** techniques.
 
 ## 🖼 Demo
-| Sad Emotion | Happy Emotion |
-|-------------|--------------|
-| ![Sad Demo](fbcd14c8-8992-49b7-903c-ca97506466f8.png) | ![Happy Demo](Demo_Image.png) |
+![Demo Image](Demo_Image.png)
 
 ## ⚙ How It Works
 1. **Capture Face** – OpenCV captures a frame from the webcam.
@@ -24,18 +22,19 @@ It aims to provide an engaging and context-aware listening experience by blendin
 - **Scikit-learn** – Additional ML support
 
 ## 📊 Example Output
-Detected Emotion: happy
-Predicted Age: 18
-Predicted Gender: Male
-Suggested Music:
+- Detected Emotion: happy
+- Predicted Age: 18
+- Predicted Gender: Male
+  
+- Suggested Music:
 
-On My Way – Robbie Rivera (Happy)
-The Joker – Steve Miller Band (Happy)
-Dance Little Sister – Terence Trent D’Arby (Happy)
-Mad About You – Hooverphonic (Happy)
-Wonderful Together – Blasterjaxx (Happy)
+1. On My Way – Robbie Rivera (Happy)
+2. The Joker – Steve Miller Band (Happy)
+3. Dance Little Sister – Terence Trent D’Arby (Happy)
+4. Mad About You – Hooverphonic (Happy)
+4. Wonderful Together – Blasterjaxx (Happy)
 
-
+   
 ## 📈 Evaluation Metrics
 We evaluated the system using a labeled test dataset containing emotion, age, and gender ground truth values.
 
@@ -48,22 +47,15 @@ We evaluated the system using a labeled test dataset containing emotion, age, an
 
 > **Note:** Metrics may vary based on lighting, camera quality, and dataset diversity.
 
-## 🚀 Roadmap
-- Expand emotion classes for finer recommendations
-- Integrate with live music APIs (Spotify, YouTube)
-- Mobile-friendly deployment
-- Multi-person detection and recommendations
+## 🔍 Comparison Analysis
+| Technique                                                      | Accuracy  |
+|----------------------------------------------------------------|-----------|
+| Prediction of emotion using pre-processing                     | 66.4%     |
+| Prediction of emotion using Gaussian blur and equalized histogram | 74.4%  |
+| Prediction of emotion using filter and CNN model               | 80.6%     |
+| Prediction of age and gender                                   | 84% and 94% |
+| Prediction of song suggestion based on emotion                 | 94.6%     |
 
-## 📜 License
-This project is for **educational purposes** under academic research.  
-Free to use and modify with proper attribution.
+> **Insight:** Advanced filtering and CNN models significantly improve emotion detection accuracy.  
+> Song recommendation based on detected emotion achieves the highest accuracy.
 
-## 👥 Team
-- **Ridit Jain**  
-- **Ashi Jain**  
-**Instructor**: Dr. Soharab Hossain Shaikh  
-**Institution**: BML Munjal University  
-**Date**: April 2024
-
-## 🏷 Topics
-`computer-vision` `emotion-detection` `age-prediction` `gender-prediction` `music-recommendation` `deepface` `opencv` `machine-learning` `python`
